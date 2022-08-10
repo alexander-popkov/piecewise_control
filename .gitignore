@@ -4,4 +4,3 @@
 !**/*.py
 venv
 .idea
-*.mps
