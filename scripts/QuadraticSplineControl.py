@@ -131,11 +131,7 @@ def search_quadratic_spline_control(P: Problem):
 
     add_objective(M, P.R, P.c, P.r, P.N, P.T, D, p)
 
-    M.write('quadratic_problem.mps')
-    import datetime as dt
-    now = dt.datetime.now()
     M.solve()
-    print(dt.datetime.now() - now)
 
     print(M.getObjective().getValue())
 
