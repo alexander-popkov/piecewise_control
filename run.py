@@ -3,9 +3,9 @@ def run() -> None:
     Запуск поиска решения задачи оптимального управления
     """
     from problem.ProblemStatement import Problem
-    from scripts.PiecewiseConstantControl import search_piecewise_constant_control
-    from scripts.PiecewiseLinearControl import search_piecewise_linear_control
-    from scripts.QuadraticSplineControl import search_quadratic_spline_control
+    from control.PiecewiseConstantControl import search_piecewise_constant_control
+    from control.PiecewiseLinearControl import search_piecewise_linear_control
+    from control.QuadraticSplineControl import search_quadratic_spline_control
     from movement.PCCObjectMovement import calculate_pcc_movement
     from movement.PLCObjectMovement import calculate_plc_movement
     from movement.QSCObjectMovement import calculate_qsc_movement
